@@ -1,0 +1,82 @@
+/* Styling untuk PopularMovies component */
+.popular-movies-container {
+  font-family: "Roboto, Helvetica, Arial, sans-serif";
+}
+
+.top-rated-movies-container {
+  font-family: "Roboto, Helvetica, Arial, sans-serif";
+}
+
+.popular-movies-title {
+  font-weight: bold;
+  border-bottom: 5px solid #dc3545;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.top-rated-movies-title {
+  font-weight: bold;
+  border-bottom: 5px solid #dc3545;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px 0;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.movie-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-info {
+  margin-top: 10px;
+}
+
+.rating-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.rating-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.movie-info-icon {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.movie-info h5 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2; /* Mengatur jarak antar baris */
+  overflow: hidden; /* Menyembunyikan teks yang keluar dari batas */
+  text-overflow: ellipsis; /* Menambahkan titik tiga (...) jika teks terlalu panjang */
+  white-space: normal; /* Membuat teks bisa terpecah ke baris baru */
+  word-wrap: break-word; /* Memecah kata jika terlalu panjang */
+  max-height: 3.6em; /* Batas maksimal untuk dua baris teks */
+}

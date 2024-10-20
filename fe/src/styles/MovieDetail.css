@@ -1,0 +1,101 @@
+/* Styling for Recommended Movies - Horizontal Scroll */
+.movie-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+    gap: 10px;
+    white-space: nowrap;
+  }
+  
+  .movie-item {
+    width: 150px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-poster:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-info {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .movie-info h5 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .movie-info p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+/* Styling for Review Section */
+.reviews-section .review-item {
+    display: grid;
+    grid-template-columns: 50px 1fr; /* Kolom 1 untuk avatar (50px), kolom 2 sisanya */
+    gap: 15px; /* Jarak antara kolom */
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .reviews-section .review-avatar img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat avatar berbentuk lingkaran */
+  }
+  
+  .reviews-section .review-details {
+    display: grid;
+    grid-template-rows: auto auto 1fr; /* 3 baris: nama, tanggal, dan teks review */
+  }
+  
+  .reviews-section .review-author {
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .reviews-section .review-date {
+    color: #aaa;
+    font-size: 0.85rem;
+  }
+  
+  .reviews-section .review-text {
+    color: #fff;
+    margin-top: 5px;
+  }
+  
+  .reviews-section .review-item:hover {
+    background-color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-load-more {
+    background-color: #ff5a5a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-load-more:hover {
+    background-color: #ff4040;
+  }
+  
+  
+  

@@ -1,0 +1,130 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #f6f8fd;
+  --secondary-color: #dc3545;
+  --color-text: #231942;
+  --navbar-color: #ffffff;
+  --navbar-color-text: #000000;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.search-result-page {
+  padding-top: 0px;
+  color: #fff;
+}
+
+.search-field {
+  border: 2px solid var(--primary-color);
+  padding: 12px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fff;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-field::placeholder {
+  color: #a0a0a0;
+}
+
+.search-field:focus {
+  outline: none;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: #fff;
+}
+
+.search-field:focus-visible {
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.filter-sidebar {
+  height: auto; /* Sesuaikan tinggi agar tidak terlalu panjang */
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2e2e2e;
+}
+
+.filter-sidebar h5 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.filter-sidebar .form-group {
+  margin-bottom: 20px;
+}
+
+.filter-sidebar .form-label {
+  color: #fff;
+  font-weight: 500;
+}
+
+.filter-sidebar .form-select,
+.filter-sidebar .form-control {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+.filter-sidebar .form-select:focus,
+.filter-sidebar .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--secondary-color);
+}
+
+.filter-sidebar button {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.movie-card,
+.celeb-card {
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster,
+.celeb-poster {
+  border-radius: 8px;
+}
+
+.movie-description,
+.celeb-description {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.movie-info,
+.celeb-info {
+  font-size: 14px;
+}
+
+.movie-card h5,
+.celeb-card h5 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-warning {
+  font-size: 18px;
+}
